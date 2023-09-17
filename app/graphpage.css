@@ -1,0 +1,33 @@
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  flex-basis: calc(10% - 10px); /* 幅の計算。10pxはチェックボックスとテキストの間隔。 */
+  margin: 5px; /* マージンを設定して要素間の間隔を調整。 */
+}
+@media (max-width: 480px) {
+  /* スマホサイズ用 */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3333% - 10px); /* 幅の計算。10pxはチェックボックスとテキストの間隔。 */
+    margin: 5px; /* マージンを設定して要素間の間隔を調整。 */
+  }
+}
+
+.checkbox-text {
+  flex: 1;
+}
+@media (max-width: 480px) {
+  .checkbox-text {
+    font-size: 14px; /* スマートフォン画面では文字サイズを小さくする。 */
+  }
+}
+
+.chart-container {
+  height: 704px;
+}
+@media (max-width: 480px) {
+  .chart-container {
+    height: 500px;
+  }
+}
